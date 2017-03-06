@@ -21,3 +21,26 @@ window.onclick = function(event) {
 	}
 };
 //__________________________________________________
+var mostarOcultar = function(divtexte) {
+	var divtext = document.getElementById(divtexte);
+	if (divtext.style.display == "block" ) {
+		divtext.style.display = "none";
+	} else{
+		divtext.style.display = "block";
+	}
+};
+
+
+function validateButton() {
+    var r = document.getElementsByName("pregunta1");
+    var pregunta1 = 0;
+
+    for(var i=0; i < r.length; i++){
+       	if(pregunta1[i].checked) {
+          	pregunta1 = i; 
+      	}
+    }
+
+    alert("Porfavor selecciona una opciones.");
+}
+
